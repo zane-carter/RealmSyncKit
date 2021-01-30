@@ -9,7 +9,7 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
+
         .library(
             name: "SyncKit",
             targets: ["SyncKit"]),
@@ -24,7 +24,7 @@ let package = Package(
             name: "SyncKit",
             dependencies: [
                 .product(name: "RealmSwift", package: "Realm")
-            ]),
+            ], path: "Sources"),
 
     ]
 )
